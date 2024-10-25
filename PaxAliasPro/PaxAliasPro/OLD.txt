@@ -1,0 +1,173 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <iomanip>
+#include <sstream>
+using namespace std;
+
+string temp1, temp2;
+
+vector<string> *getTags(string tag) {
+
+	vector<string> *stringArr = new vector<string>;
+	int i = 0;
+	string x;
+	ifstream file("test.txt");
+	tag = " : " + tag;
+
+
+	while (!file.eof())
+	{
+		getline(file, x);
+
+		if (x.find(tag) != string::npos) //tag found in line
+		{
+			temp1 += x + "\n";
+			while (x[0] == '\t')	//erase leading tabs
+				x = x.erase(0, 1);
+			int tagPos = x.find(tag);
+			stringArr->push_back(x.substr(0, tagPos));
+		}
+		else {
+			temp1 += x + "\n";
+		}
+
+		i++;
+	}
+
+	file.close();
+
+	return stringArr;
+}
+vector<string> *getTags2(string tag) {
+
+	vector<string> *stringArr = new vector<string>;
+	int i = 0;
+	string x;
+	ifstream file("testOUT.L5K");
+	tag = " : " + tag;
+	temp1.clear();
+
+
+	while (!file.eof())
+	{
+		getline(file, x);
+
+		if (x.find(tag) != string::npos) //tag found in line
+		{
+			temp1 += x + "\n";
+			while (x[0] == '\t')	//erase leading tabs
+				x = x.erase(0, 1);
+			int tagPos = x.find(tag);
+			stringArr->push_back(x.substr(0, tagPos));
+		}
+		else {
+			temp1 += x + "\n";
+		}
+
+		i++;
+	}
+
+	file.close();
+
+	return stringArr;
+}
+
+void addAlias(string const stringIn, string const tagType)
+{
+	string x;
+	temp2.clear();
+	istringstream tempstream1(temp1);
+
+	while (getline(tempstream1, x))
+	{
+		if ((x.find(" : " + tagType) != string::npos) && (x.find(stringIn) != string::npos)) //tag found in line
+		{
+			while (x.find("END_TAG") == string::npos) {
+				temp2 += x + "\n";
+				getline(tempstream1, x);
+			}
+
+			if (stringIn.substr(stringIn.size() - 4, 4) == tagType) {
+				temp2 += stringIn + "P_Intlk OF " + stringIn.substr(0, stringIn.size() - tagType.size()) + "P_Intlk ;" + "\n";
+				temp2 += stringIn + "P_Perm OF " + stringIn.substr(0, stringIn.size() - tagType.size()) + "P_Perm ;" + "\n";
+				temp2 += x + "\n";
+			}
+			else {
+				temp2 += stringIn + "_Intlk OF " + stringIn + "_P_INTLK ;" + "\n";
+				temp2 += stringIn + "_Perm OF " + stringIn + "_P_PERM ;" + "\n";
+				temp2 += x + "\n";
+			}
+
+		}
+		else
+			temp2 += x + "\n";
+	}
+
+	temp1 = temp2;
+
+}
+
+
+
+int main()
+{
+	vector<string> *tags = new vector<string>;
+	tags = getTags("P_VSD");
+
+	for (int i = 0; i < static_cast<int>(tags->size()); i++) {
+		cout << left << setw(20) << tags->at(i) << setw(3) << right << fixed << setprecision(0) << ((static_cast<double>(i) + 1.) / static_cast<double>(tags->size())) * 100 << "%" << endl;
+		addAlias(tags->at(i), "P_VSD");
+	}
+
+	ofstream ofileCopy("testOUT.L5K");
+	istringstream tempstream(temp1);
+	string x;
+	while (!tempstream.eof())
+	{
+		getline(tempstream, x);
+		ofileCopy << x << endl;	//pass line back in
+	}
+
+	ofileCopy.close();
+
+	tags = getTags2("P_Motor");
+	for (int i = 0; i < static_cast<int>(tags->size()); i++) {
+		cout << left << setw(20) << tags->at(i) << setw(3) << right << fixed << setprecision(0) << ((static_cast<double>(i) + 1.) / static_cast<double>(tags->size())) * 100 << "%" << endl;
+		addAlias(tags->at(i), "P_Motor");
+	}
+	ofstream ofileCopy1("testOUT.L5K");
+	istringstream tempstream1(temp1);
+	x.clear();
+	while (!tempstream1.eof())
+	{
+		getline(tempstream1, x);
+		ofileCopy << x << endl;	//pass line back in
+	}
+	ofileCopy1.close();
+
+	tags = getTags2("P_Motor2Spd");
+	for (int i = 0; i < static_cast<int>(tags->size()); i++) {
+		cout << left << setw(20) << tags->at(i) << setw(3) << right << fixed << setprecision(0) << ((static_cast<double>(i) + 1.) / static_cast<double>(tags->size())) * 100 << "%" << endl;
+		addAlias(tags->at(i), "P_Motor2Spd");
+	}
+	ofstream ofileCopy2("testOUT.L5K");
+	istringstream tempstream2(temp1);
+	x.clear();
+	while (!tempstream2.eof())
+	{
+		getline(tempstream2, x);
+		ofileCopy << x << endl;	//pass line back in
+	}
+	ofileCopy2.close();
+
+
+
+	return 0;
+}
+
