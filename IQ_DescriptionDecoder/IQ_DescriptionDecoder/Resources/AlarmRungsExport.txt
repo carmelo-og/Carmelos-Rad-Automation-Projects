@@ -1,0 +1,10 @@
+<Rung Number="0" Type="N">
+<Text>
+<![CDATA[XIC(TAG_1.HOA.14)XIO(TAG_1.Alarm.Disabled)OTL(TAG_1.Alarm.Value);]]>
+</Text>
+</Rung>
+<Rung Number="1" Type="N">
+<Text>
+<![CDATA[[XIO(TAG_1.HOA.14) XIC(TAG_1.Alarm.Acknowledge) OTU(TAG_1.Alarm.Value) ,XIC(TAG_1.Alarm.Value) XIC(Alarm_Acknowledge) OTL(TAG_1.Alarm.Acknowledge) ,XIO(TAG_1.Alarm.Value) OTU(TAG_1.Alarm.Acknowledge) ];]]>
+</Text>
+</Rung>

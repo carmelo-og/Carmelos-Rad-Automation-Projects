@@ -1,0 +1,124 @@
+﻿<Comment Operand=".HOA.0">
+<![CDATA[
+Output On]]>
+</Comment>
+<Comment Operand=".HOA.1">
+<![CDATA[
+Request Auto On]]>
+</Comment>
+<Comment Operand=".HOA.2">
+<![CDATA[
+Request Manual On]]>
+</Comment>
+<Comment Operand=".HOA.3">
+<![CDATA[
+Interlocked Off For Auto Mode]]>
+</Comment>
+<Comment Operand=".HOA.4">
+<![CDATA[
+Interlocked Off For Manual Mode]]>
+</Comment>
+<Comment Operand=".HOA.5">
+<![CDATA[
+Simulation Bit]]>
+</Comment>
+<Comment Operand=".HOA.6">
+<![CDATA[
+Feed Slow]]>
+</Comment>
+<Comment Operand=".HOA.7">
+<![CDATA[
+Feed Fast]]>
+</Comment>
+<Comment Operand=".HOA.8">
+<![CDATA[
+Feedback On Fault]]>
+</Comment>
+<Comment Operand=".HOA.9">
+<![CDATA[
+Feedback Off Fault]]>
+</Comment>
+<Comment Operand=".HOA.10">
+<![CDATA[
+Feedback On]]>
+</Comment>
+<Comment Operand=".HOA.11">
+<![CDATA[
+Feedback Off]]>
+</Comment>
+<Comment Operand=".HOA.12">
+<![CDATA[
+Auto/Manual Mode (1=Auto; 0=Manual)]]>
+</Comment>
+<Comment Operand=".HOA.13">
+<![CDATA[
+Interlocked Off]]>
+</Comment>
+<Comment Operand=".HOA.14">
+<![CDATA[
+Faulted]]>
+</Comment>
+<Comment Operand=".HOA.15">
+<![CDATA[
+VFD Fault]]>
+</Comment>
+<Comment Operand=".HOA.16">
+<![CDATA[
+VFD Request Reset Fault]]>
+</Comment>
+<Comment Operand=".HOA.17">
+<![CDATA[
+Request Auto Mode OneShot]]>
+</Comment>
+<Comment Operand=".HOA.18">
+<![CDATA[
+Request Manual On OneShot]]>
+</Comment>
+<Comment Operand=".HOA.19">
+<![CDATA[
+Panelview Request Manual Off OneShot]]>
+</Comment>
+<Comment Operand=".HOA.20">
+<![CDATA[
+Panelview Request Auto Mode Button]]>
+</Comment>
+<Comment Operand=".HOA.21">
+<![CDATA[
+Panelview Request Manual On Button]]>
+</Comment>
+<Comment Operand=".HOA.22">
+<![CDATA[
+Panelview Request Manual Off Button]]>
+</Comment>
+<Comment Operand=".HOA.23">
+<![CDATA[
+Close Button]]>
+</Comment>
+<Comment Operand=".HOA.24">
+<![CDATA[
+Enter Button]]>
+</Comment>
+<Comment Operand=".HOA.27">
+<![CDATA[
+Request Auto On
+(Helper Bit 1)]]>
+</Comment>
+<Comment Operand=".HOA.28">
+<![CDATA[
+Request Auto On
+(Helper Bit 2)]]>
+</Comment>
+<Comment Operand=".HOA.29">
+<![CDATA[
+Request Auto On
+(Helper Bit 3)]]>
+</Comment>
+<Comment Operand=".HOA.30">
+<![CDATA[
+Request Auto On
+(Helper Bit 4)]]>
+</Comment>
+<Comment Operand=".HOA.31">
+<![CDATA[
+DO NOT USE]]>
+</Comment>

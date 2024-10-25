@@ -1,0 +1,10 @@
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\obj\Debug\IQ_DescriptionDecoder.csprojAssemblyReference.cache
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\obj\Debug\IQ_DescriptionDecoder.Form1.resources
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\obj\Debug\IQ_DescriptionDecoder.Properties.Resources.resources
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\obj\Debug\IQ_DescriptionDecoder.csproj.GenerateResource.cache
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\obj\Debug\IQ_DescriptionDecoder.csproj.CoreCompileInputs.cache
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\bin\Debug\IQ_DescriptionDecoder.exe.config
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\bin\Debug\IQ_DescriptionDecoder.exe
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\bin\Debug\IQ_DescriptionDecoder.pdb
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\obj\Debug\IQ_DescriptionDecoder.exe
+C:\Users\Carmelo\source\repos\IQ_DescriptionDecoder\IQ_DescriptionDecoder\obj\Debug\IQ_DescriptionDecoder.pdb

@@ -1,0 +1,1696 @@
+			<Rung Number="10" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(CV4100.HOA.1)TOF(CV4100.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="11" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4100.HOA.12) [XIC(CV4100.HOA.1) ,XIC(CV4100.DelayBeforeOffTimer.DN) ] XIO(CV4100.HOA.3) ,XIO(CV4100.HOA.12) [XIC(CV4100.HOA.2) ,XIC(CV4100.HOA.24) ] XIO(CV4100.HOA.4) ]OTE(CV4100.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="12" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4100.Value)OTE(CV4100.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="13" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4100.Value)OTE(CV4100.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="14" Type="N">
+			<Text>
+			<![CDATA[XIO(CV4100.Value)OTE(CV4100.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="15" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4100.HOA.10)[ONS(CV4100.OnCountONS) ADD(CV4100.OnCount,1,CV4100.OnCount) ,XIC(HOA_TIMER.DN) ADD(CV4100.OnMinutes,HOA_TIMER_ADD_AMOUNT,CV4100.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="16" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4100.HOA.3) XIC(CV4100.HOA.1) XIC(CV4100.HOA.12) ,XIC(CV4100.HOA.4) XIC(CV4100.HOA.2) XIO(CV4100.HOA.12) ]OTE(CV4100.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="17" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4100.HOA.0) [XIO(CV4100.HOA.10) ,XIC(CV4100.HOA.11) ] ,XIO(CV4100.HOA.0) [XIC(CV4100.HOA.10) ,XIO(CV4100.HOA.11) ] ][TON(CV4100.FeedbackFaultTimer,?,?) ,XIC(CV4100.FeedbackFaultTimer.DN) OTE(CV4100.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="18" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4100.HOA.10)[MOV(999999999,CV4100.FeedbackOnTimer.PRE) ,TON(CV4100.FeedbackOnTimer,?,?) ,GRT(CV4100.FeedbackOnTimer.ACC,CV4100.FeedbackOnTimeShort) OTE(CV4100.OnForTimeShortBit) ,GRT(CV4100.FeedbackOnTimer.ACC,CV4100.FeedbackOnTimeLong) OTE(CV4100.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="19" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4100.HOA.11)[MOV(999999999,CV4100.FeedbackOffTimer.PRE) ,TON(CV4100.FeedbackOffTimer,?,?) ,GRT(CV4100.FeedbackOffTimer.ACC,CV4100.FeedbackOffTimeShort) OTE(CV4100.OffForTimeShortBit) ,GRT(CV4100.FeedbackOffTimer.ACC,CV4100.FeedbackOffTimeLong) OTE(CV4100.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="20" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(CV4200.HOA.1)TOF(CV4200.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="21" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4200.HOA.12) [XIC(CV4200.HOA.1) ,XIC(CV4200.DelayBeforeOffTimer.DN) ] XIO(CV4200.HOA.3) ,XIO(CV4200.HOA.12) [XIC(CV4200.HOA.2) ,XIC(CV4200.HOA.24) ] XIO(CV4200.HOA.4) ]OTE(CV4200.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="22" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4200.Value)OTE(CV4200.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="23" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4200.Value)OTE(CV4200.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="24" Type="N">
+			<Text>
+			<![CDATA[XIO(CV4200.Value)OTE(CV4200.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="25" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4200.HOA.10)[ONS(CV4200.OnCountONS) ADD(CV4200.OnCount,1,CV4200.OnCount) ,XIC(HOA_TIMER.DN) ADD(CV4200.OnMinutes,HOA_TIMER_ADD_AMOUNT,CV4200.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="26" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4200.HOA.3) XIC(CV4200.HOA.1) XIC(CV4200.HOA.12) ,XIC(CV4200.HOA.4) XIC(CV4200.HOA.2) XIO(CV4200.HOA.12) ]OTE(CV4200.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="27" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4200.HOA.0) [XIO(CV4200.HOA.10) ,XIC(CV4200.HOA.11) ] ,XIO(CV4200.HOA.0) [XIC(CV4200.HOA.10) ,XIO(CV4200.HOA.11) ] ][TON(CV4200.FeedbackFaultTimer,?,?) ,XIC(CV4200.FeedbackFaultTimer.DN) OTE(CV4200.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="28" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4200.HOA.10)[MOV(999999999,CV4200.FeedbackOnTimer.PRE) ,TON(CV4200.FeedbackOnTimer,?,?) ,GRT(CV4200.FeedbackOnTimer.ACC,CV4200.FeedbackOnTimeShort) OTE(CV4200.OnForTimeShortBit) ,GRT(CV4200.FeedbackOnTimer.ACC,CV4200.FeedbackOnTimeLong) OTE(CV4200.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="29" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4200.HOA.11)[MOV(999999999,CV4200.FeedbackOffTimer.PRE) ,TON(CV4200.FeedbackOffTimer,?,?) ,GRT(CV4200.FeedbackOffTimer.ACC,CV4200.FeedbackOffTimeShort) OTE(CV4200.OffForTimeShortBit) ,GRT(CV4200.FeedbackOffTimer.ACC,CV4200.FeedbackOffTimeLong) OTE(CV4200.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="30" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(CV4300.HOA.1)TOF(CV4300.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="31" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4300.HOA.12) [XIC(CV4300.HOA.1) ,XIC(CV4300.DelayBeforeOffTimer.DN) ] XIO(CV4300.HOA.3) ,XIO(CV4300.HOA.12) [XIC(CV4300.HOA.2) ,XIC(CV4300.HOA.24) ] XIO(CV4300.HOA.4) ]OTE(CV4300.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="32" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4300.Value)OTE(CV4300.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="33" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4300.Value)OTE(CV4300.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="34" Type="N">
+			<Text>
+			<![CDATA[XIO(CV4300.Value)OTE(CV4300.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="35" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4300.HOA.10)[ONS(CV4300.OnCountONS) ADD(CV4300.OnCount,1,CV4300.OnCount) ,XIC(HOA_TIMER.DN) ADD(CV4300.OnMinutes,HOA_TIMER_ADD_AMOUNT,CV4300.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="36" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4300.HOA.3) XIC(CV4300.HOA.1) XIC(CV4300.HOA.12) ,XIC(CV4300.HOA.4) XIC(CV4300.HOA.2) XIO(CV4300.HOA.12) ]OTE(CV4300.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="37" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4300.HOA.0) [XIO(CV4300.HOA.10) ,XIC(CV4300.HOA.11) ] ,XIO(CV4300.HOA.0) [XIC(CV4300.HOA.10) ,XIO(CV4300.HOA.11) ] ][TON(CV4300.FeedbackFaultTimer,?,?) ,XIC(CV4300.FeedbackFaultTimer.DN) OTE(CV4300.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="38" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4300.HOA.10)[MOV(999999999,CV4300.FeedbackOnTimer.PRE) ,TON(CV4300.FeedbackOnTimer,?,?) ,GRT(CV4300.FeedbackOnTimer.ACC,CV4300.FeedbackOnTimeShort) OTE(CV4300.OnForTimeShortBit) ,GRT(CV4300.FeedbackOnTimer.ACC,CV4300.FeedbackOnTimeLong) OTE(CV4300.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="39" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4300.HOA.11)[MOV(999999999,CV4300.FeedbackOffTimer.PRE) ,TON(CV4300.FeedbackOffTimer,?,?) ,GRT(CV4300.FeedbackOffTimer.ACC,CV4300.FeedbackOffTimeShort) OTE(CV4300.OffForTimeShortBit) ,GRT(CV4300.FeedbackOffTimer.ACC,CV4300.FeedbackOffTimeLong) OTE(CV4300.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="40" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(CV4400.HOA.1)TOF(CV4400.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="41" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4400.HOA.12) [XIC(CV4400.HOA.1) ,XIC(CV4400.DelayBeforeOffTimer.DN) ] XIO(CV4400.HOA.3) ,XIO(CV4400.HOA.12) [XIC(CV4400.HOA.2) ,XIC(CV4400.HOA.24) ] XIO(CV4400.HOA.4) ]OTE(CV4400.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="42" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4400.Value)OTE(CV4400.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="43" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4400.Value)OTE(CV4400.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="44" Type="N">
+			<Text>
+			<![CDATA[XIO(CV4400.Value)OTE(CV4400.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="45" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4400.HOA.10)[ONS(CV4400.OnCountONS) ADD(CV4400.OnCount,1,CV4400.OnCount) ,XIC(HOA_TIMER.DN) ADD(CV4400.OnMinutes,HOA_TIMER_ADD_AMOUNT,CV4400.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="46" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4400.HOA.3) XIC(CV4400.HOA.1) XIC(CV4400.HOA.12) ,XIC(CV4400.HOA.4) XIC(CV4400.HOA.2) XIO(CV4400.HOA.12) ]OTE(CV4400.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="47" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4400.HOA.0) [XIO(CV4400.HOA.10) ,XIC(CV4400.HOA.11) ] ,XIO(CV4400.HOA.0) [XIC(CV4400.HOA.10) ,XIO(CV4400.HOA.11) ] ][TON(CV4400.FeedbackFaultTimer,?,?) ,XIC(CV4400.FeedbackFaultTimer.DN) OTE(CV4400.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="48" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4400.HOA.10)[MOV(999999999,CV4400.FeedbackOnTimer.PRE) ,TON(CV4400.FeedbackOnTimer,?,?) ,GRT(CV4400.FeedbackOnTimer.ACC,CV4400.FeedbackOnTimeShort) OTE(CV4400.OnForTimeShortBit) ,GRT(CV4400.FeedbackOnTimer.ACC,CV4400.FeedbackOnTimeLong) OTE(CV4400.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="49" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4400.HOA.11)[MOV(999999999,CV4400.FeedbackOffTimer.PRE) ,TON(CV4400.FeedbackOffTimer,?,?) ,GRT(CV4400.FeedbackOffTimer.ACC,CV4400.FeedbackOffTimeShort) OTE(CV4400.OffForTimeShortBit) ,GRT(CV4400.FeedbackOffTimer.ACC,CV4400.FeedbackOffTimeLong) OTE(CV4400.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="50" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(CV4500.HOA.1)TOF(CV4500.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="51" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4500.HOA.12) [XIC(CV4500.HOA.1) ,XIC(CV4500.DelayBeforeOffTimer.DN) ] XIO(CV4500.HOA.3) ,XIO(CV4500.HOA.12) [XIC(CV4500.HOA.2) ,XIC(CV4500.HOA.24) ] XIO(CV4500.HOA.4) ]OTE(CV4500.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="52" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4500.Value)OTE(CV4500.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="53" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4500.Value)OTE(CV4500.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="54" Type="N">
+			<Text>
+			<![CDATA[XIO(CV4500.Value)OTE(CV4500.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="55" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4500.HOA.10)[ONS(CV4500.OnCountONS) ADD(CV4500.OnCount,1,CV4500.OnCount) ,XIC(HOA_TIMER.DN) ADD(CV4500.OnMinutes,HOA_TIMER_ADD_AMOUNT,CV4500.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="56" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4500.HOA.3) XIC(CV4500.HOA.1) XIC(CV4500.HOA.12) ,XIC(CV4500.HOA.4) XIC(CV4500.HOA.2) XIO(CV4500.HOA.12) ]OTE(CV4500.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="57" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4500.HOA.0) [XIO(CV4500.HOA.10) ,XIC(CV4500.HOA.11) ] ,XIO(CV4500.HOA.0) [XIC(CV4500.HOA.10) ,XIO(CV4500.HOA.11) ] ][TON(CV4500.FeedbackFaultTimer,?,?) ,XIC(CV4500.FeedbackFaultTimer.DN) OTE(CV4500.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="58" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4500.HOA.10)[MOV(999999999,CV4500.FeedbackOnTimer.PRE) ,TON(CV4500.FeedbackOnTimer,?,?) ,GRT(CV4500.FeedbackOnTimer.ACC,CV4500.FeedbackOnTimeShort) OTE(CV4500.OnForTimeShortBit) ,GRT(CV4500.FeedbackOnTimer.ACC,CV4500.FeedbackOnTimeLong) OTE(CV4500.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="59" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4500.HOA.11)[MOV(999999999,CV4500.FeedbackOffTimer.PRE) ,TON(CV4500.FeedbackOffTimer,?,?) ,GRT(CV4500.FeedbackOffTimer.ACC,CV4500.FeedbackOffTimeShort) OTE(CV4500.OffForTimeShortBit) ,GRT(CV4500.FeedbackOffTimer.ACC,CV4500.FeedbackOffTimeLong) OTE(CV4500.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="60" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(CV4600.HOA.1)TOF(CV4600.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="61" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4600.HOA.12) [XIC(CV4600.HOA.1) ,XIC(CV4600.DelayBeforeOffTimer.DN) ] XIO(CV4600.HOA.3) ,XIO(CV4600.HOA.12) [XIC(CV4600.HOA.2) ,XIC(CV4600.HOA.24) ] XIO(CV4600.HOA.4) ]OTE(CV4600.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="62" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4600.Value)OTE(CV4600.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="63" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4600.Value)OTE(CV4600.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="64" Type="N">
+			<Text>
+			<![CDATA[XIO(CV4600.Value)OTE(CV4600.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="65" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4600.HOA.10)[ONS(CV4600.OnCountONS) ADD(CV4600.OnCount,1,CV4600.OnCount) ,XIC(HOA_TIMER.DN) ADD(CV4600.OnMinutes,HOA_TIMER_ADD_AMOUNT,CV4600.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="66" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4600.HOA.3) XIC(CV4600.HOA.1) XIC(CV4600.HOA.12) ,XIC(CV4600.HOA.4) XIC(CV4600.HOA.2) XIO(CV4600.HOA.12) ]OTE(CV4600.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="67" Type="N">
+			<Text>
+			<![CDATA[[XIC(CV4600.HOA.0) [XIO(CV4600.HOA.10) ,XIC(CV4600.HOA.11) ] ,XIO(CV4600.HOA.0) [XIC(CV4600.HOA.10) ,XIO(CV4600.HOA.11) ] ][TON(CV4600.FeedbackFaultTimer,?,?) ,XIC(CV4600.FeedbackFaultTimer.DN) OTE(CV4600.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="68" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4600.HOA.10)[MOV(999999999,CV4600.FeedbackOnTimer.PRE) ,TON(CV4600.FeedbackOnTimer,?,?) ,GRT(CV4600.FeedbackOnTimer.ACC,CV4600.FeedbackOnTimeShort) OTE(CV4600.OnForTimeShortBit) ,GRT(CV4600.FeedbackOnTimer.ACC,CV4600.FeedbackOnTimeLong) OTE(CV4600.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="69" Type="N">
+			<Text>
+			<![CDATA[XIC(CV4600.HOA.11)[MOV(999999999,CV4600.FeedbackOffTimer.PRE) ,TON(CV4600.FeedbackOffTimer,?,?) ,GRT(CV4600.FeedbackOffTimer.ACC,CV4600.FeedbackOffTimeShort) OTE(CV4600.OffForTimeShortBit) ,GRT(CV4600.FeedbackOffTimer.ACC,CV4600.FeedbackOffTimeLong) OTE(CV4600.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="70" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(FY4101A.HOA.1)TOF(FY4101A.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="71" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4101A.HOA.12) [XIC(FY4101A.HOA.1) ,XIC(FY4101A.DelayBeforeOffTimer.DN) ] XIO(FY4101A.HOA.3) ,XIO(FY4101A.HOA.12) [XIC(FY4101A.HOA.2) ,XIC(FY4101A.HOA.24) ] XIO(FY4101A.HOA.4) ]OTE(FY4101A.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="72" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4101A.Value)OTE(FY4101A.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="73" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4101A.Value)OTE(FY4101A.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="74" Type="N">
+			<Text>
+			<![CDATA[XIO(FY4101A.Value)OTE(FY4101A.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="75" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4101A.HOA.10)[ONS(FY4101A.OnCountONS) ADD(FY4101A.OnCount,1,FY4101A.OnCount) ,XIC(HOA_TIMER.DN) ADD(FY4101A.OnMinutes,HOA_TIMER_ADD_AMOUNT,FY4101A.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="76" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4101A.HOA.3) XIC(FY4101A.HOA.1) XIC(FY4101A.HOA.12) ,XIC(FY4101A.HOA.4) XIC(FY4101A.HOA.2) XIO(FY4101A.HOA.12) ]OTE(FY4101A.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="77" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4101A.HOA.0) [XIO(FY4101A.HOA.10) ,XIC(FY4101A.HOA.11) ] ,XIO(FY4101A.HOA.0) [XIC(FY4101A.HOA.10) ,XIO(FY4101A.HOA.11) ] ][TON(FY4101A.FeedbackFaultTimer,?,?) ,XIC(FY4101A.FeedbackFaultTimer.DN) OTE(FY4101A.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="78" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4101A.HOA.10)[MOV(999999999,FY4101A.FeedbackOnTimer.PRE) ,TON(FY4101A.FeedbackOnTimer,?,?) ,GRT(FY4101A.FeedbackOnTimer.ACC,FY4101A.FeedbackOnTimeShort) OTE(FY4101A.OnForTimeShortBit) ,GRT(FY4101A.FeedbackOnTimer.ACC,FY4101A.FeedbackOnTimeLong) OTE(FY4101A.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="79" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4101A.HOA.11)[MOV(999999999,FY4101A.FeedbackOffTimer.PRE) ,TON(FY4101A.FeedbackOffTimer,?,?) ,GRT(FY4101A.FeedbackOffTimer.ACC,FY4101A.FeedbackOffTimeShort) OTE(FY4101A.OffForTimeShortBit) ,GRT(FY4101A.FeedbackOffTimer.ACC,FY4101A.FeedbackOffTimeLong) OTE(FY4101A.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="80" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(FY4201A.HOA.1)TOF(FY4201A.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="81" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4201A.HOA.12) [XIC(FY4201A.HOA.1) ,XIC(FY4201A.DelayBeforeOffTimer.DN) ] XIO(FY4201A.HOA.3) ,XIO(FY4201A.HOA.12) [XIC(FY4201A.HOA.2) ,XIC(FY4201A.HOA.24) ] XIO(FY4201A.HOA.4) ]OTE(FY4201A.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="82" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4201A.Value)OTE(FY4201A.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="83" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4201A.Value)OTE(FY4201A.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="84" Type="N">
+			<Text>
+			<![CDATA[XIO(FY4201A.Value)OTE(FY4201A.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="85" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4201A.HOA.10)[ONS(FY4201A.OnCountONS) ADD(FY4201A.OnCount,1,FY4201A.OnCount) ,XIC(HOA_TIMER.DN) ADD(FY4201A.OnMinutes,HOA_TIMER_ADD_AMOUNT,FY4201A.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="86" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4201A.HOA.3) XIC(FY4201A.HOA.1) XIC(FY4201A.HOA.12) ,XIC(FY4201A.HOA.4) XIC(FY4201A.HOA.2) XIO(FY4201A.HOA.12) ]OTE(FY4201A.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="87" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4201A.HOA.0) [XIO(FY4201A.HOA.10) ,XIC(FY4201A.HOA.11) ] ,XIO(FY4201A.HOA.0) [XIC(FY4201A.HOA.10) ,XIO(FY4201A.HOA.11) ] ][TON(FY4201A.FeedbackFaultTimer,?,?) ,XIC(FY4201A.FeedbackFaultTimer.DN) OTE(FY4201A.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="88" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4201A.HOA.10)[MOV(999999999,FY4201A.FeedbackOnTimer.PRE) ,TON(FY4201A.FeedbackOnTimer,?,?) ,GRT(FY4201A.FeedbackOnTimer.ACC,FY4201A.FeedbackOnTimeShort) OTE(FY4201A.OnForTimeShortBit) ,GRT(FY4201A.FeedbackOnTimer.ACC,FY4201A.FeedbackOnTimeLong) OTE(FY4201A.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="89" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4201A.HOA.11)[MOV(999999999,FY4201A.FeedbackOffTimer.PRE) ,TON(FY4201A.FeedbackOffTimer,?,?) ,GRT(FY4201A.FeedbackOffTimer.ACC,FY4201A.FeedbackOffTimeShort) OTE(FY4201A.OffForTimeShortBit) ,GRT(FY4201A.FeedbackOffTimer.ACC,FY4201A.FeedbackOffTimeLong) OTE(FY4201A.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="90" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(FY4301A.HOA.1)TOF(FY4301A.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="91" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4301A.HOA.12) [XIC(FY4301A.HOA.1) ,XIC(FY4301A.DelayBeforeOffTimer.DN) ] XIO(FY4301A.HOA.3) ,XIO(FY4301A.HOA.12) [XIC(FY4301A.HOA.2) ,XIC(FY4301A.HOA.24) ] XIO(FY4301A.HOA.4) ]OTE(FY4301A.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="92" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4301A.Value)OTE(FY4301A.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="93" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4301A.Value)OTE(FY4301A.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="94" Type="N">
+			<Text>
+			<![CDATA[XIO(FY4301A.Value)OTE(FY4301A.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="95" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4301A.HOA.10)[ONS(FY4301A.OnCountONS) ADD(FY4301A.OnCount,1,FY4301A.OnCount) ,XIC(HOA_TIMER.DN) ADD(FY4301A.OnMinutes,HOA_TIMER_ADD_AMOUNT,FY4301A.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="96" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4301A.HOA.3) XIC(FY4301A.HOA.1) XIC(FY4301A.HOA.12) ,XIC(FY4301A.HOA.4) XIC(FY4301A.HOA.2) XIO(FY4301A.HOA.12) ]OTE(FY4301A.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="97" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4301A.HOA.0) [XIO(FY4301A.HOA.10) ,XIC(FY4301A.HOA.11) ] ,XIO(FY4301A.HOA.0) [XIC(FY4301A.HOA.10) ,XIO(FY4301A.HOA.11) ] ][TON(FY4301A.FeedbackFaultTimer,?,?) ,XIC(FY4301A.FeedbackFaultTimer.DN) OTE(FY4301A.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="98" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4301A.HOA.10)[MOV(999999999,FY4301A.FeedbackOnTimer.PRE) ,TON(FY4301A.FeedbackOnTimer,?,?) ,GRT(FY4301A.FeedbackOnTimer.ACC,FY4301A.FeedbackOnTimeShort) OTE(FY4301A.OnForTimeShortBit) ,GRT(FY4301A.FeedbackOnTimer.ACC,FY4301A.FeedbackOnTimeLong) OTE(FY4301A.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="99" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4301A.HOA.11)[MOV(999999999,FY4301A.FeedbackOffTimer.PRE) ,TON(FY4301A.FeedbackOffTimer,?,?) ,GRT(FY4301A.FeedbackOffTimer.ACC,FY4301A.FeedbackOffTimeShort) OTE(FY4301A.OffForTimeShortBit) ,GRT(FY4301A.FeedbackOffTimer.ACC,FY4301A.FeedbackOffTimeLong) OTE(FY4301A.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="100" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(FY4401A.HOA.1)TOF(FY4401A.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="101" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4401A.HOA.12) [XIC(FY4401A.HOA.1) ,XIC(FY4401A.DelayBeforeOffTimer.DN) ] XIO(FY4401A.HOA.3) ,XIO(FY4401A.HOA.12) [XIC(FY4401A.HOA.2) ,XIC(FY4401A.HOA.24) ] XIO(FY4401A.HOA.4) ]OTE(FY4401A.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="102" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4401A.Value)OTE(FY4401A.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="103" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4401A.Value)OTE(FY4401A.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="104" Type="N">
+			<Text>
+			<![CDATA[XIO(FY4401A.Value)OTE(FY4401A.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="105" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4401A.HOA.10)[ONS(FY4401A.OnCountONS) ADD(FY4401A.OnCount,1,FY4401A.OnCount) ,XIC(HOA_TIMER.DN) ADD(FY4401A.OnMinutes,HOA_TIMER_ADD_AMOUNT,FY4401A.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="106" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4401A.HOA.3) XIC(FY4401A.HOA.1) XIC(FY4401A.HOA.12) ,XIC(FY4401A.HOA.4) XIC(FY4401A.HOA.2) XIO(FY4401A.HOA.12) ]OTE(FY4401A.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="107" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4401A.HOA.0) [XIO(FY4401A.HOA.10) ,XIC(FY4401A.HOA.11) ] ,XIO(FY4401A.HOA.0) [XIC(FY4401A.HOA.10) ,XIO(FY4401A.HOA.11) ] ][TON(FY4401A.FeedbackFaultTimer,?,?) ,XIC(FY4401A.FeedbackFaultTimer.DN) OTE(FY4401A.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="108" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4401A.HOA.10)[MOV(999999999,FY4401A.FeedbackOnTimer.PRE) ,TON(FY4401A.FeedbackOnTimer,?,?) ,GRT(FY4401A.FeedbackOnTimer.ACC,FY4401A.FeedbackOnTimeShort) OTE(FY4401A.OnForTimeShortBit) ,GRT(FY4401A.FeedbackOnTimer.ACC,FY4401A.FeedbackOnTimeLong) OTE(FY4401A.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="109" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4401A.HOA.11)[MOV(999999999,FY4401A.FeedbackOffTimer.PRE) ,TON(FY4401A.FeedbackOffTimer,?,?) ,GRT(FY4401A.FeedbackOffTimer.ACC,FY4401A.FeedbackOffTimeShort) OTE(FY4401A.OffForTimeShortBit) ,GRT(FY4401A.FeedbackOffTimer.ACC,FY4401A.FeedbackOffTimeLong) OTE(FY4401A.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="110" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(FY4501A.HOA.1)TOF(FY4501A.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="111" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4501A.HOA.12) [XIC(FY4501A.HOA.1) ,XIC(FY4501A.DelayBeforeOffTimer.DN) ] XIO(FY4501A.HOA.3) ,XIO(FY4501A.HOA.12) [XIC(FY4501A.HOA.2) ,XIC(FY4501A.HOA.24) ] XIO(FY4501A.HOA.4) ]OTE(FY4501A.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="112" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4501A.Value)OTE(FY4501A.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="113" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4501A.Value)OTE(FY4501A.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="114" Type="N">
+			<Text>
+			<![CDATA[XIO(FY4501A.Value)OTE(FY4501A.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="115" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4501A.HOA.10)[ONS(FY4501A.OnCountONS) ADD(FY4501A.OnCount,1,FY4501A.OnCount) ,XIC(HOA_TIMER.DN) ADD(FY4501A.OnMinutes,HOA_TIMER_ADD_AMOUNT,FY4501A.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="116" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4501A.HOA.3) XIC(FY4501A.HOA.1) XIC(FY4501A.HOA.12) ,XIC(FY4501A.HOA.4) XIC(FY4501A.HOA.2) XIO(FY4501A.HOA.12) ]OTE(FY4501A.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="117" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4501A.HOA.0) [XIO(FY4501A.HOA.10) ,XIC(FY4501A.HOA.11) ] ,XIO(FY4501A.HOA.0) [XIC(FY4501A.HOA.10) ,XIO(FY4501A.HOA.11) ] ][TON(FY4501A.FeedbackFaultTimer,?,?) ,XIC(FY4501A.FeedbackFaultTimer.DN) OTE(FY4501A.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="118" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4501A.HOA.10)[MOV(999999999,FY4501A.FeedbackOnTimer.PRE) ,TON(FY4501A.FeedbackOnTimer,?,?) ,GRT(FY4501A.FeedbackOnTimer.ACC,FY4501A.FeedbackOnTimeShort) OTE(FY4501A.OnForTimeShortBit) ,GRT(FY4501A.FeedbackOnTimer.ACC,FY4501A.FeedbackOnTimeLong) OTE(FY4501A.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="119" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4501A.HOA.11)[MOV(999999999,FY4501A.FeedbackOffTimer.PRE) ,TON(FY4501A.FeedbackOffTimer,?,?) ,GRT(FY4501A.FeedbackOffTimer.ACC,FY4501A.FeedbackOffTimeShort) OTE(FY4501A.OffForTimeShortBit) ,GRT(FY4501A.FeedbackOffTimer.ACC,FY4501A.FeedbackOffTimeLong) OTE(FY4501A.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="120" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(FY4601A.HOA.1)TOF(FY4601A.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="121" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4601A.HOA.12) [XIC(FY4601A.HOA.1) ,XIC(FY4601A.DelayBeforeOffTimer.DN) ] XIO(FY4601A.HOA.3) ,XIO(FY4601A.HOA.12) [XIC(FY4601A.HOA.2) ,XIC(FY4601A.HOA.24) ] XIO(FY4601A.HOA.4) ]OTE(FY4601A.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="122" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4601A.Value)OTE(FY4601A.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="123" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4601A.Value)OTE(FY4601A.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="124" Type="N">
+			<Text>
+			<![CDATA[XIO(FY4601A.Value)OTE(FY4601A.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="125" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4601A.HOA.10)[ONS(FY4601A.OnCountONS) ADD(FY4601A.OnCount,1,FY4601A.OnCount) ,XIC(HOA_TIMER.DN) ADD(FY4601A.OnMinutes,HOA_TIMER_ADD_AMOUNT,FY4601A.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="126" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4601A.HOA.3) XIC(FY4601A.HOA.1) XIC(FY4601A.HOA.12) ,XIC(FY4601A.HOA.4) XIC(FY4601A.HOA.2) XIO(FY4601A.HOA.12) ]OTE(FY4601A.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="127" Type="N">
+			<Text>
+			<![CDATA[[XIC(FY4601A.HOA.0) [XIO(FY4601A.HOA.10) ,XIC(FY4601A.HOA.11) ] ,XIO(FY4601A.HOA.0) [XIC(FY4601A.HOA.10) ,XIO(FY4601A.HOA.11) ] ][TON(FY4601A.FeedbackFaultTimer,?,?) ,XIC(FY4601A.FeedbackFaultTimer.DN) OTE(FY4601A.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="128" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4601A.HOA.10)[MOV(999999999,FY4601A.FeedbackOnTimer.PRE) ,TON(FY4601A.FeedbackOnTimer,?,?) ,GRT(FY4601A.FeedbackOnTimer.ACC,FY4601A.FeedbackOnTimeShort) OTE(FY4601A.OnForTimeShortBit) ,GRT(FY4601A.FeedbackOnTimer.ACC,FY4601A.FeedbackOnTimeLong) OTE(FY4601A.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="129" Type="N">
+			<Text>
+			<![CDATA[XIC(FY4601A.HOA.11)[MOV(999999999,FY4601A.FeedbackOffTimer.PRE) ,TON(FY4601A.FeedbackOffTimer,?,?) ,GRT(FY4601A.FeedbackOffTimer.ACC,FY4601A.FeedbackOffTimeShort) OTE(FY4601A.OffForTimeShortBit) ,GRT(FY4601A.FeedbackOffTimer.ACC,FY4601A.FeedbackOffTimeLong) OTE(FY4601A.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="130" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0612.HOA.1)TOF(SPL0612.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="131" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0612.HOA.12) [XIC(SPL0612.HOA.1) ,XIC(SPL0612.DelayBeforeOffTimer.DN) ] XIO(SPL0612.HOA.3) ,XIO(SPL0612.HOA.12) [XIC(SPL0612.HOA.2) ,XIC(SPL0612.HOA.24) ] XIO(SPL0612.HOA.4) ]OTE(SPL0612.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="132" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0612.Value)OTE(SPL0612.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="133" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0612.Value)OTE(SPL0612.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="134" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0612.Value)OTE(SPL0612.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="135" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0612.HOA.10)[ONS(SPL0612.OnCountONS) ADD(SPL0612.OnCount,1,SPL0612.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0612.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0612.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="136" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0612.HOA.3) XIC(SPL0612.HOA.1) XIC(SPL0612.HOA.12) ,XIC(SPL0612.HOA.4) XIC(SPL0612.HOA.2) XIO(SPL0612.HOA.12) ]OTE(SPL0612.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="137" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0612.HOA.0) [XIO(SPL0612.HOA.10) ,XIC(SPL0612.HOA.11) ] ,XIO(SPL0612.HOA.0) [XIC(SPL0612.HOA.10) ,XIO(SPL0612.HOA.11) ] ][TON(SPL0612.FeedbackFaultTimer,?,?) ,XIC(SPL0612.FeedbackFaultTimer.DN) OTE(SPL0612.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="138" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0612.HOA.10)[MOV(999999999,SPL0612.FeedbackOnTimer.PRE) ,TON(SPL0612.FeedbackOnTimer,?,?) ,GRT(SPL0612.FeedbackOnTimer.ACC,SPL0612.FeedbackOnTimeShort) OTE(SPL0612.OnForTimeShortBit) ,GRT(SPL0612.FeedbackOnTimer.ACC,SPL0612.FeedbackOnTimeLong) OTE(SPL0612.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="139" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0612.HOA.11)[MOV(999999999,SPL0612.FeedbackOffTimer.PRE) ,TON(SPL0612.FeedbackOffTimer,?,?) ,GRT(SPL0612.FeedbackOffTimer.ACC,SPL0612.FeedbackOffTimeShort) OTE(SPL0612.OffForTimeShortBit) ,GRT(SPL0612.FeedbackOffTimer.ACC,SPL0612.FeedbackOffTimeLong) OTE(SPL0612.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="140" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0613.HOA.1)TOF(SPL0613.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="141" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0613.HOA.12) [XIC(SPL0613.HOA.1) ,XIC(SPL0613.DelayBeforeOffTimer.DN) ] XIO(SPL0613.HOA.3) ,XIO(SPL0613.HOA.12) [XIC(SPL0613.HOA.2) ,XIC(SPL0613.HOA.24) ] XIO(SPL0613.HOA.4) ]OTE(SPL0613.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="142" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0613.Value)OTE(SPL0613.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="143" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0613.Value)OTE(SPL0613.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="144" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0613.Value)OTE(SPL0613.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="145" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0613.HOA.10)[ONS(SPL0613.OnCountONS) ADD(SPL0613.OnCount,1,SPL0613.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0613.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0613.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="146" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0613.HOA.3) XIC(SPL0613.HOA.1) XIC(SPL0613.HOA.12) ,XIC(SPL0613.HOA.4) XIC(SPL0613.HOA.2) XIO(SPL0613.HOA.12) ]OTE(SPL0613.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="147" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0613.HOA.0) [XIO(SPL0613.HOA.10) ,XIC(SPL0613.HOA.11) ] ,XIO(SPL0613.HOA.0) [XIC(SPL0613.HOA.10) ,XIO(SPL0613.HOA.11) ] ][TON(SPL0613.FeedbackFaultTimer,?,?) ,XIC(SPL0613.FeedbackFaultTimer.DN) OTE(SPL0613.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="148" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0613.HOA.10)[MOV(999999999,SPL0613.FeedbackOnTimer.PRE) ,TON(SPL0613.FeedbackOnTimer,?,?) ,GRT(SPL0613.FeedbackOnTimer.ACC,SPL0613.FeedbackOnTimeShort) OTE(SPL0613.OnForTimeShortBit) ,GRT(SPL0613.FeedbackOnTimer.ACC,SPL0613.FeedbackOnTimeLong) OTE(SPL0613.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="149" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0613.HOA.11)[MOV(999999999,SPL0613.FeedbackOffTimer.PRE) ,TON(SPL0613.FeedbackOffTimer,?,?) ,GRT(SPL0613.FeedbackOffTimer.ACC,SPL0613.FeedbackOffTimeShort) OTE(SPL0613.OffForTimeShortBit) ,GRT(SPL0613.FeedbackOffTimer.ACC,SPL0613.FeedbackOffTimeLong) OTE(SPL0613.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="150" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0614.HOA.1)TOF(SPL0614.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="151" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0614.HOA.12) [XIC(SPL0614.HOA.1) ,XIC(SPL0614.DelayBeforeOffTimer.DN) ] XIO(SPL0614.HOA.3) ,XIO(SPL0614.HOA.12) [XIC(SPL0614.HOA.2) ,XIC(SPL0614.HOA.24) ] XIO(SPL0614.HOA.4) ]OTE(SPL0614.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="152" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0614.Value)OTE(SPL0614.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="153" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0614.Value)OTE(SPL0614.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="154" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0614.Value)OTE(SPL0614.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="155" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0614.HOA.10)[ONS(SPL0614.OnCountONS) ADD(SPL0614.OnCount,1,SPL0614.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0614.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0614.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="156" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0614.HOA.3) XIC(SPL0614.HOA.1) XIC(SPL0614.HOA.12) ,XIC(SPL0614.HOA.4) XIC(SPL0614.HOA.2) XIO(SPL0614.HOA.12) ]OTE(SPL0614.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="157" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0614.HOA.0) [XIO(SPL0614.HOA.10) ,XIC(SPL0614.HOA.11) ] ,XIO(SPL0614.HOA.0) [XIC(SPL0614.HOA.10) ,XIO(SPL0614.HOA.11) ] ][TON(SPL0614.FeedbackFaultTimer,?,?) ,XIC(SPL0614.FeedbackFaultTimer.DN) OTE(SPL0614.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="158" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0614.HOA.10)[MOV(999999999,SPL0614.FeedbackOnTimer.PRE) ,TON(SPL0614.FeedbackOnTimer,?,?) ,GRT(SPL0614.FeedbackOnTimer.ACC,SPL0614.FeedbackOnTimeShort) OTE(SPL0614.OnForTimeShortBit) ,GRT(SPL0614.FeedbackOnTimer.ACC,SPL0614.FeedbackOnTimeLong) OTE(SPL0614.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="159" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0614.HOA.11)[MOV(999999999,SPL0614.FeedbackOffTimer.PRE) ,TON(SPL0614.FeedbackOffTimer,?,?) ,GRT(SPL0614.FeedbackOffTimer.ACC,SPL0614.FeedbackOffTimeShort) OTE(SPL0614.OffForTimeShortBit) ,GRT(SPL0614.FeedbackOffTimer.ACC,SPL0614.FeedbackOffTimeLong) OTE(SPL0614.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="160" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0615.HOA.1)TOF(SPL0615.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="161" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0615.HOA.12) [XIC(SPL0615.HOA.1) ,XIC(SPL0615.DelayBeforeOffTimer.DN) ] XIO(SPL0615.HOA.3) ,XIO(SPL0615.HOA.12) [XIC(SPL0615.HOA.2) ,XIC(SPL0615.HOA.24) ] XIO(SPL0615.HOA.4) ]OTE(SPL0615.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="162" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0615.Value)OTE(SPL0615.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="163" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0615.Value)OTE(SPL0615.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="164" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0615.Value)OTE(SPL0615.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="165" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0615.HOA.10)[ONS(SPL0615.OnCountONS) ADD(SPL0615.OnCount,1,SPL0615.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0615.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0615.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="166" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0615.HOA.3) XIC(SPL0615.HOA.1) XIC(SPL0615.HOA.12) ,XIC(SPL0615.HOA.4) XIC(SPL0615.HOA.2) XIO(SPL0615.HOA.12) ]OTE(SPL0615.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="167" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0615.HOA.0) [XIO(SPL0615.HOA.10) ,XIC(SPL0615.HOA.11) ] ,XIO(SPL0615.HOA.0) [XIC(SPL0615.HOA.10) ,XIO(SPL0615.HOA.11) ] ][TON(SPL0615.FeedbackFaultTimer,?,?) ,XIC(SPL0615.FeedbackFaultTimer.DN) OTE(SPL0615.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="168" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0615.HOA.10)[MOV(999999999,SPL0615.FeedbackOnTimer.PRE) ,TON(SPL0615.FeedbackOnTimer,?,?) ,GRT(SPL0615.FeedbackOnTimer.ACC,SPL0615.FeedbackOnTimeShort) OTE(SPL0615.OnForTimeShortBit) ,GRT(SPL0615.FeedbackOnTimer.ACC,SPL0615.FeedbackOnTimeLong) OTE(SPL0615.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="169" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0615.HOA.11)[MOV(999999999,SPL0615.FeedbackOffTimer.PRE) ,TON(SPL0615.FeedbackOffTimer,?,?) ,GRT(SPL0615.FeedbackOffTimer.ACC,SPL0615.FeedbackOffTimeShort) OTE(SPL0615.OffForTimeShortBit) ,GRT(SPL0615.FeedbackOffTimer.ACC,SPL0615.FeedbackOffTimeLong) OTE(SPL0615.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="170" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0700.HOA.1)TOF(SPL0700.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="171" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0700.HOA.12) [XIC(SPL0700.HOA.1) ,XIC(SPL0700.DelayBeforeOffTimer.DN) ] XIO(SPL0700.HOA.3) ,XIO(SPL0700.HOA.12) [XIC(SPL0700.HOA.2) ,XIC(SPL0700.HOA.24) ] XIO(SPL0700.HOA.4) ]OTE(SPL0700.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="172" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0700.Value)OTE(SPL0700.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="173" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0700.Value)OTE(SPL0700.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="174" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0700.Value)OTE(SPL0700.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="175" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0700.HOA.10)[ONS(SPL0700.OnCountONS) ADD(SPL0700.OnCount,1,SPL0700.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0700.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0700.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="176" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0700.HOA.3) XIC(SPL0700.HOA.1) XIC(SPL0700.HOA.12) ,XIC(SPL0700.HOA.4) XIC(SPL0700.HOA.2) XIO(SPL0700.HOA.12) ]OTE(SPL0700.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="177" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0700.HOA.0) [XIO(SPL0700.HOA.10) ,XIC(SPL0700.HOA.11) ] ,XIO(SPL0700.HOA.0) [XIC(SPL0700.HOA.10) ,XIO(SPL0700.HOA.11) ] ][TON(SPL0700.FeedbackFaultTimer,?,?) ,XIC(SPL0700.FeedbackFaultTimer.DN) OTE(SPL0700.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="178" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0700.HOA.10)[MOV(999999999,SPL0700.FeedbackOnTimer.PRE) ,TON(SPL0700.FeedbackOnTimer,?,?) ,GRT(SPL0700.FeedbackOnTimer.ACC,SPL0700.FeedbackOnTimeShort) OTE(SPL0700.OnForTimeShortBit) ,GRT(SPL0700.FeedbackOnTimer.ACC,SPL0700.FeedbackOnTimeLong) OTE(SPL0700.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="179" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0700.HOA.11)[MOV(999999999,SPL0700.FeedbackOffTimer.PRE) ,TON(SPL0700.FeedbackOffTimer,?,?) ,GRT(SPL0700.FeedbackOffTimer.ACC,SPL0700.FeedbackOffTimeShort) OTE(SPL0700.OffForTimeShortBit) ,GRT(SPL0700.FeedbackOffTimer.ACC,SPL0700.FeedbackOffTimeLong) OTE(SPL0700.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="180" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0701.HOA.1)TOF(SPL0701.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="181" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0701.HOA.12) [XIC(SPL0701.HOA.1) ,XIC(SPL0701.DelayBeforeOffTimer.DN) ] XIO(SPL0701.HOA.3) ,XIO(SPL0701.HOA.12) [XIC(SPL0701.HOA.2) ,XIC(SPL0701.HOA.24) ] XIO(SPL0701.HOA.4) ]OTE(SPL0701.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="182" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0701.Value)OTE(SPL0701.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="183" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0701.Value)OTE(SPL0701.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="184" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0701.Value)OTE(SPL0701.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="185" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0701.HOA.10)[ONS(SPL0701.OnCountONS) ADD(SPL0701.OnCount,1,SPL0701.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0701.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0701.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="186" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0701.HOA.3) XIC(SPL0701.HOA.1) XIC(SPL0701.HOA.12) ,XIC(SPL0701.HOA.4) XIC(SPL0701.HOA.2) XIO(SPL0701.HOA.12) ]OTE(SPL0701.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="187" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0701.HOA.0) [XIO(SPL0701.HOA.10) ,XIC(SPL0701.HOA.11) ] ,XIO(SPL0701.HOA.0) [XIC(SPL0701.HOA.10) ,XIO(SPL0701.HOA.11) ] ][TON(SPL0701.FeedbackFaultTimer,?,?) ,XIC(SPL0701.FeedbackFaultTimer.DN) OTE(SPL0701.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="188" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0701.HOA.10)[MOV(999999999,SPL0701.FeedbackOnTimer.PRE) ,TON(SPL0701.FeedbackOnTimer,?,?) ,GRT(SPL0701.FeedbackOnTimer.ACC,SPL0701.FeedbackOnTimeShort) OTE(SPL0701.OnForTimeShortBit) ,GRT(SPL0701.FeedbackOnTimer.ACC,SPL0701.FeedbackOnTimeLong) OTE(SPL0701.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="189" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0701.HOA.11)[MOV(999999999,SPL0701.FeedbackOffTimer.PRE) ,TON(SPL0701.FeedbackOffTimer,?,?) ,GRT(SPL0701.FeedbackOffTimer.ACC,SPL0701.FeedbackOffTimeShort) OTE(SPL0701.OffForTimeShortBit) ,GRT(SPL0701.FeedbackOffTimer.ACC,SPL0701.FeedbackOffTimeLong) OTE(SPL0701.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="190" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0702.HOA.1)TOF(SPL0702.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="191" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0702.HOA.12) [XIC(SPL0702.HOA.1) ,XIC(SPL0702.DelayBeforeOffTimer.DN) ] XIO(SPL0702.HOA.3) ,XIO(SPL0702.HOA.12) [XIC(SPL0702.HOA.2) ,XIC(SPL0702.HOA.24) ] XIO(SPL0702.HOA.4) ]OTE(SPL0702.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="192" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0702.Value)OTE(SPL0702.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="193" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0702.Value)OTE(SPL0702.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="194" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0702.Value)OTE(SPL0702.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="195" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0702.HOA.10)[ONS(SPL0702.OnCountONS) ADD(SPL0702.OnCount,1,SPL0702.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0702.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0702.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="196" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0702.HOA.3) XIC(SPL0702.HOA.1) XIC(SPL0702.HOA.12) ,XIC(SPL0702.HOA.4) XIC(SPL0702.HOA.2) XIO(SPL0702.HOA.12) ]OTE(SPL0702.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="197" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0702.HOA.0) [XIO(SPL0702.HOA.10) ,XIC(SPL0702.HOA.11) ] ,XIO(SPL0702.HOA.0) [XIC(SPL0702.HOA.10) ,XIO(SPL0702.HOA.11) ] ][TON(SPL0702.FeedbackFaultTimer,?,?) ,XIC(SPL0702.FeedbackFaultTimer.DN) OTE(SPL0702.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="198" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0702.HOA.10)[MOV(999999999,SPL0702.FeedbackOnTimer.PRE) ,TON(SPL0702.FeedbackOnTimer,?,?) ,GRT(SPL0702.FeedbackOnTimer.ACC,SPL0702.FeedbackOnTimeShort) OTE(SPL0702.OnForTimeShortBit) ,GRT(SPL0702.FeedbackOnTimer.ACC,SPL0702.FeedbackOnTimeLong) OTE(SPL0702.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="199" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0702.HOA.11)[MOV(999999999,SPL0702.FeedbackOffTimer.PRE) ,TON(SPL0702.FeedbackOffTimer,?,?) ,GRT(SPL0702.FeedbackOffTimer.ACC,SPL0702.FeedbackOffTimeShort) OTE(SPL0702.OffForTimeShortBit) ,GRT(SPL0702.FeedbackOffTimer.ACC,SPL0702.FeedbackOffTimeLong) OTE(SPL0702.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="200" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0703.HOA.1)TOF(SPL0703.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="201" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0703.HOA.12) [XIC(SPL0703.HOA.1) ,XIC(SPL0703.DelayBeforeOffTimer.DN) ] XIO(SPL0703.HOA.3) ,XIO(SPL0703.HOA.12) [XIC(SPL0703.HOA.2) ,XIC(SPL0703.HOA.24) ] XIO(SPL0703.HOA.4) ]OTE(SPL0703.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="202" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0703.Value)OTE(SPL0703.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="203" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0703.Value)OTE(SPL0703.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="204" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0703.Value)OTE(SPL0703.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="205" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0703.HOA.10)[ONS(SPL0703.OnCountONS) ADD(SPL0703.OnCount,1,SPL0703.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0703.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0703.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="206" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0703.HOA.3) XIC(SPL0703.HOA.1) XIC(SPL0703.HOA.12) ,XIC(SPL0703.HOA.4) XIC(SPL0703.HOA.2) XIO(SPL0703.HOA.12) ]OTE(SPL0703.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="207" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0703.HOA.0) [XIO(SPL0703.HOA.10) ,XIC(SPL0703.HOA.11) ] ,XIO(SPL0703.HOA.0) [XIC(SPL0703.HOA.10) ,XIO(SPL0703.HOA.11) ] ][TON(SPL0703.FeedbackFaultTimer,?,?) ,XIC(SPL0703.FeedbackFaultTimer.DN) OTE(SPL0703.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="208" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0703.HOA.10)[MOV(999999999,SPL0703.FeedbackOnTimer.PRE) ,TON(SPL0703.FeedbackOnTimer,?,?) ,GRT(SPL0703.FeedbackOnTimer.ACC,SPL0703.FeedbackOnTimeShort) OTE(SPL0703.OnForTimeShortBit) ,GRT(SPL0703.FeedbackOnTimer.ACC,SPL0703.FeedbackOnTimeLong) OTE(SPL0703.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="209" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0703.HOA.11)[MOV(999999999,SPL0703.FeedbackOffTimer.PRE) ,TON(SPL0703.FeedbackOffTimer,?,?) ,GRT(SPL0703.FeedbackOffTimer.ACC,SPL0703.FeedbackOffTimeShort) OTE(SPL0703.OffForTimeShortBit) ,GRT(SPL0703.FeedbackOffTimer.ACC,SPL0703.FeedbackOffTimeLong) OTE(SPL0703.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="210" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0704.HOA.1)TOF(SPL0704.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="211" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0704.HOA.12) [XIC(SPL0704.HOA.1) ,XIC(SPL0704.DelayBeforeOffTimer.DN) ] XIO(SPL0704.HOA.3) ,XIO(SPL0704.HOA.12) [XIC(SPL0704.HOA.2) ,XIC(SPL0704.HOA.24) ] XIO(SPL0704.HOA.4) ]OTE(SPL0704.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="212" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0704.Value)OTE(SPL0704.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="213" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0704.Value)OTE(SPL0704.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="214" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0704.Value)OTE(SPL0704.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="215" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0704.HOA.10)[ONS(SPL0704.OnCountONS) ADD(SPL0704.OnCount,1,SPL0704.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0704.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0704.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="216" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0704.HOA.3) XIC(SPL0704.HOA.1) XIC(SPL0704.HOA.12) ,XIC(SPL0704.HOA.4) XIC(SPL0704.HOA.2) XIO(SPL0704.HOA.12) ]OTE(SPL0704.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="217" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0704.HOA.0) [XIO(SPL0704.HOA.10) ,XIC(SPL0704.HOA.11) ] ,XIO(SPL0704.HOA.0) [XIC(SPL0704.HOA.10) ,XIO(SPL0704.HOA.11) ] ][TON(SPL0704.FeedbackFaultTimer,?,?) ,XIC(SPL0704.FeedbackFaultTimer.DN) OTE(SPL0704.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="218" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0704.HOA.10)[MOV(999999999,SPL0704.FeedbackOnTimer.PRE) ,TON(SPL0704.FeedbackOnTimer,?,?) ,GRT(SPL0704.FeedbackOnTimer.ACC,SPL0704.FeedbackOnTimeShort) OTE(SPL0704.OnForTimeShortBit) ,GRT(SPL0704.FeedbackOnTimer.ACC,SPL0704.FeedbackOnTimeLong) OTE(SPL0704.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="219" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0704.HOA.11)[MOV(999999999,SPL0704.FeedbackOffTimer.PRE) ,TON(SPL0704.FeedbackOffTimer,?,?) ,GRT(SPL0704.FeedbackOffTimer.ACC,SPL0704.FeedbackOffTimeShort) OTE(SPL0704.OffForTimeShortBit) ,GRT(SPL0704.FeedbackOffTimer.ACC,SPL0704.FeedbackOffTimeLong) OTE(SPL0704.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="220" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0705.HOA.1)TOF(SPL0705.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="221" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0705.HOA.12) [XIC(SPL0705.HOA.1) ,XIC(SPL0705.DelayBeforeOffTimer.DN) ] XIO(SPL0705.HOA.3) ,XIO(SPL0705.HOA.12) [XIC(SPL0705.HOA.2) ,XIC(SPL0705.HOA.24) ] XIO(SPL0705.HOA.4) ]OTE(SPL0705.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="222" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0705.Value)OTE(SPL0705.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="223" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0705.Value)OTE(SPL0705.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="224" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0705.Value)OTE(SPL0705.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="225" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0705.HOA.10)[ONS(SPL0705.OnCountONS) ADD(SPL0705.OnCount,1,SPL0705.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0705.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0705.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="226" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0705.HOA.3) XIC(SPL0705.HOA.1) XIC(SPL0705.HOA.12) ,XIC(SPL0705.HOA.4) XIC(SPL0705.HOA.2) XIO(SPL0705.HOA.12) ]OTE(SPL0705.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="227" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0705.HOA.0) [XIO(SPL0705.HOA.10) ,XIC(SPL0705.HOA.11) ] ,XIO(SPL0705.HOA.0) [XIC(SPL0705.HOA.10) ,XIO(SPL0705.HOA.11) ] ][TON(SPL0705.FeedbackFaultTimer,?,?) ,XIC(SPL0705.FeedbackFaultTimer.DN) OTE(SPL0705.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="228" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0705.HOA.10)[MOV(999999999,SPL0705.FeedbackOnTimer.PRE) ,TON(SPL0705.FeedbackOnTimer,?,?) ,GRT(SPL0705.FeedbackOnTimer.ACC,SPL0705.FeedbackOnTimeShort) OTE(SPL0705.OnForTimeShortBit) ,GRT(SPL0705.FeedbackOnTimer.ACC,SPL0705.FeedbackOnTimeLong) OTE(SPL0705.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="229" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0705.HOA.11)[MOV(999999999,SPL0705.FeedbackOffTimer.PRE) ,TON(SPL0705.FeedbackOffTimer,?,?) ,GRT(SPL0705.FeedbackOffTimer.ACC,SPL0705.FeedbackOffTimeShort) OTE(SPL0705.OffForTimeShortBit) ,GRT(SPL0705.FeedbackOffTimer.ACC,SPL0705.FeedbackOffTimeLong) OTE(SPL0705.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="230" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0706.HOA.1)TOF(SPL0706.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="231" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0706.HOA.12) [XIC(SPL0706.HOA.1) ,XIC(SPL0706.DelayBeforeOffTimer.DN) ] XIO(SPL0706.HOA.3) ,XIO(SPL0706.HOA.12) [XIC(SPL0706.HOA.2) ,XIC(SPL0706.HOA.24) ] XIO(SPL0706.HOA.4) ]OTE(SPL0706.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="232" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0706.Value)OTE(SPL0706.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="233" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0706.Value)OTE(SPL0706.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="234" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0706.Value)OTE(SPL0706.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="235" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0706.HOA.10)[ONS(SPL0706.OnCountONS) ADD(SPL0706.OnCount,1,SPL0706.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0706.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0706.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="236" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0706.HOA.3) XIC(SPL0706.HOA.1) XIC(SPL0706.HOA.12) ,XIC(SPL0706.HOA.4) XIC(SPL0706.HOA.2) XIO(SPL0706.HOA.12) ]OTE(SPL0706.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="237" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0706.HOA.0) [XIO(SPL0706.HOA.10) ,XIC(SPL0706.HOA.11) ] ,XIO(SPL0706.HOA.0) [XIC(SPL0706.HOA.10) ,XIO(SPL0706.HOA.11) ] ][TON(SPL0706.FeedbackFaultTimer,?,?) ,XIC(SPL0706.FeedbackFaultTimer.DN) OTE(SPL0706.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="238" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0706.HOA.10)[MOV(999999999,SPL0706.FeedbackOnTimer.PRE) ,TON(SPL0706.FeedbackOnTimer,?,?) ,GRT(SPL0706.FeedbackOnTimer.ACC,SPL0706.FeedbackOnTimeShort) OTE(SPL0706.OnForTimeShortBit) ,GRT(SPL0706.FeedbackOnTimer.ACC,SPL0706.FeedbackOnTimeLong) OTE(SPL0706.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="239" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0706.HOA.11)[MOV(999999999,SPL0706.FeedbackOffTimer.PRE) ,TON(SPL0706.FeedbackOffTimer,?,?) ,GRT(SPL0706.FeedbackOffTimer.ACC,SPL0706.FeedbackOffTimeShort) OTE(SPL0706.OffForTimeShortBit) ,GRT(SPL0706.FeedbackOffTimer.ACC,SPL0706.FeedbackOffTimeLong) OTE(SPL0706.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="240" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0707.HOA.1)TOF(SPL0707.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="241" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0707.HOA.12) [XIC(SPL0707.HOA.1) ,XIC(SPL0707.DelayBeforeOffTimer.DN) ] XIO(SPL0707.HOA.3) ,XIO(SPL0707.HOA.12) [XIC(SPL0707.HOA.2) ,XIC(SPL0707.HOA.24) ] XIO(SPL0707.HOA.4) ]OTE(SPL0707.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="242" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0707.Value)OTE(SPL0707.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="243" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0707.Value)OTE(SPL0707.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="244" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0707.Value)OTE(SPL0707.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="245" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0707.HOA.10)[ONS(SPL0707.OnCountONS) ADD(SPL0707.OnCount,1,SPL0707.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0707.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0707.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="246" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0707.HOA.3) XIC(SPL0707.HOA.1) XIC(SPL0707.HOA.12) ,XIC(SPL0707.HOA.4) XIC(SPL0707.HOA.2) XIO(SPL0707.HOA.12) ]OTE(SPL0707.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="247" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0707.HOA.0) [XIO(SPL0707.HOA.10) ,XIC(SPL0707.HOA.11) ] ,XIO(SPL0707.HOA.0) [XIC(SPL0707.HOA.10) ,XIO(SPL0707.HOA.11) ] ][TON(SPL0707.FeedbackFaultTimer,?,?) ,XIC(SPL0707.FeedbackFaultTimer.DN) OTE(SPL0707.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="248" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0707.HOA.10)[MOV(999999999,SPL0707.FeedbackOnTimer.PRE) ,TON(SPL0707.FeedbackOnTimer,?,?) ,GRT(SPL0707.FeedbackOnTimer.ACC,SPL0707.FeedbackOnTimeShort) OTE(SPL0707.OnForTimeShortBit) ,GRT(SPL0707.FeedbackOnTimer.ACC,SPL0707.FeedbackOnTimeLong) OTE(SPL0707.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="249" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0707.HOA.11)[MOV(999999999,SPL0707.FeedbackOffTimer.PRE) ,TON(SPL0707.FeedbackOffTimer,?,?) ,GRT(SPL0707.FeedbackOffTimer.ACC,SPL0707.FeedbackOffTimeShort) OTE(SPL0707.OffForTimeShortBit) ,GRT(SPL0707.FeedbackOffTimer.ACC,SPL0707.FeedbackOffTimeLong) OTE(SPL0707.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="250" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0708.HOA.1)TOF(SPL0708.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="251" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0708.HOA.12) [XIC(SPL0708.HOA.1) ,XIC(SPL0708.DelayBeforeOffTimer.DN) ] XIO(SPL0708.HOA.3) ,XIO(SPL0708.HOA.12) [XIC(SPL0708.HOA.2) ,XIC(SPL0708.HOA.24) ] XIO(SPL0708.HOA.4) ]OTE(SPL0708.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="252" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0708.Value)OTE(SPL0708.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="253" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0708.Value)OTE(SPL0708.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="254" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0708.Value)OTE(SPL0708.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="255" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0708.HOA.10)[ONS(SPL0708.OnCountONS) ADD(SPL0708.OnCount,1,SPL0708.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0708.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0708.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="256" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0708.HOA.3) XIC(SPL0708.HOA.1) XIC(SPL0708.HOA.12) ,XIC(SPL0708.HOA.4) XIC(SPL0708.HOA.2) XIO(SPL0708.HOA.12) ]OTE(SPL0708.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="257" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0708.HOA.0) [XIO(SPL0708.HOA.10) ,XIC(SPL0708.HOA.11) ] ,XIO(SPL0708.HOA.0) [XIC(SPL0708.HOA.10) ,XIO(SPL0708.HOA.11) ] ][TON(SPL0708.FeedbackFaultTimer,?,?) ,XIC(SPL0708.FeedbackFaultTimer.DN) OTE(SPL0708.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="258" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0708.HOA.10)[MOV(999999999,SPL0708.FeedbackOnTimer.PRE) ,TON(SPL0708.FeedbackOnTimer,?,?) ,GRT(SPL0708.FeedbackOnTimer.ACC,SPL0708.FeedbackOnTimeShort) OTE(SPL0708.OnForTimeShortBit) ,GRT(SPL0708.FeedbackOnTimer.ACC,SPL0708.FeedbackOnTimeLong) OTE(SPL0708.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="259" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0708.HOA.11)[MOV(999999999,SPL0708.FeedbackOffTimer.PRE) ,TON(SPL0708.FeedbackOffTimer,?,?) ,GRT(SPL0708.FeedbackOffTimer.ACC,SPL0708.FeedbackOffTimeShort) OTE(SPL0708.OffForTimeShortBit) ,GRT(SPL0708.FeedbackOffTimer.ACC,SPL0708.FeedbackOffTimeLong) OTE(SPL0708.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="260" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0709.HOA.1)TOF(SPL0709.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="261" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0709.HOA.12) [XIC(SPL0709.HOA.1) ,XIC(SPL0709.DelayBeforeOffTimer.DN) ] XIO(SPL0709.HOA.3) ,XIO(SPL0709.HOA.12) [XIC(SPL0709.HOA.2) ,XIC(SPL0709.HOA.24) ] XIO(SPL0709.HOA.4) ]OTE(SPL0709.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="262" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0709.Value)OTE(SPL0709.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="263" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0709.Value)OTE(SPL0709.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="264" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0709.Value)OTE(SPL0709.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="265" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0709.HOA.10)[ONS(SPL0709.OnCountONS) ADD(SPL0709.OnCount,1,SPL0709.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0709.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0709.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="266" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0709.HOA.3) XIC(SPL0709.HOA.1) XIC(SPL0709.HOA.12) ,XIC(SPL0709.HOA.4) XIC(SPL0709.HOA.2) XIO(SPL0709.HOA.12) ]OTE(SPL0709.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="267" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0709.HOA.0) [XIO(SPL0709.HOA.10) ,XIC(SPL0709.HOA.11) ] ,XIO(SPL0709.HOA.0) [XIC(SPL0709.HOA.10) ,XIO(SPL0709.HOA.11) ] ][TON(SPL0709.FeedbackFaultTimer,?,?) ,XIC(SPL0709.FeedbackFaultTimer.DN) OTE(SPL0709.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="268" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0709.HOA.10)[MOV(999999999,SPL0709.FeedbackOnTimer.PRE) ,TON(SPL0709.FeedbackOnTimer,?,?) ,GRT(SPL0709.FeedbackOnTimer.ACC,SPL0709.FeedbackOnTimeShort) OTE(SPL0709.OnForTimeShortBit) ,GRT(SPL0709.FeedbackOnTimer.ACC,SPL0709.FeedbackOnTimeLong) OTE(SPL0709.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="269" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0709.HOA.11)[MOV(999999999,SPL0709.FeedbackOffTimer.PRE) ,TON(SPL0709.FeedbackOffTimer,?,?) ,GRT(SPL0709.FeedbackOffTimer.ACC,SPL0709.FeedbackOffTimeShort) OTE(SPL0709.OffForTimeShortBit) ,GRT(SPL0709.FeedbackOffTimer.ACC,SPL0709.FeedbackOffTimeLong) OTE(SPL0709.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="270" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0710.HOA.1)TOF(SPL0710.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="271" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0710.HOA.12) [XIC(SPL0710.HOA.1) ,XIC(SPL0710.DelayBeforeOffTimer.DN) ] XIO(SPL0710.HOA.3) ,XIO(SPL0710.HOA.12) [XIC(SPL0710.HOA.2) ,XIC(SPL0710.HOA.24) ] XIO(SPL0710.HOA.4) ]OTE(SPL0710.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="272" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0710.Value)OTE(SPL0710.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="273" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0710.Value)OTE(SPL0710.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="274" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0710.Value)OTE(SPL0710.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="275" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0710.HOA.10)[ONS(SPL0710.OnCountONS) ADD(SPL0710.OnCount,1,SPL0710.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0710.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0710.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="276" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0710.HOA.3) XIC(SPL0710.HOA.1) XIC(SPL0710.HOA.12) ,XIC(SPL0710.HOA.4) XIC(SPL0710.HOA.2) XIO(SPL0710.HOA.12) ]OTE(SPL0710.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="277" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0710.HOA.0) [XIO(SPL0710.HOA.10) ,XIC(SPL0710.HOA.11) ] ,XIO(SPL0710.HOA.0) [XIC(SPL0710.HOA.10) ,XIO(SPL0710.HOA.11) ] ][TON(SPL0710.FeedbackFaultTimer,?,?) ,XIC(SPL0710.FeedbackFaultTimer.DN) OTE(SPL0710.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="278" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0710.HOA.10)[MOV(999999999,SPL0710.FeedbackOnTimer.PRE) ,TON(SPL0710.FeedbackOnTimer,?,?) ,GRT(SPL0710.FeedbackOnTimer.ACC,SPL0710.FeedbackOnTimeShort) OTE(SPL0710.OnForTimeShortBit) ,GRT(SPL0710.FeedbackOnTimer.ACC,SPL0710.FeedbackOnTimeLong) OTE(SPL0710.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="279" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0710.HOA.11)[MOV(999999999,SPL0710.FeedbackOffTimer.PRE) ,TON(SPL0710.FeedbackOffTimer,?,?) ,GRT(SPL0710.FeedbackOffTimer.ACC,SPL0710.FeedbackOffTimeShort) OTE(SPL0710.OffForTimeShortBit) ,GRT(SPL0710.FeedbackOffTimer.ACC,SPL0710.FeedbackOffTimeLong) OTE(SPL0710.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="280" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0711.HOA.1)TOF(SPL0711.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="281" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0711.HOA.12) [XIC(SPL0711.HOA.1) ,XIC(SPL0711.DelayBeforeOffTimer.DN) ] XIO(SPL0711.HOA.3) ,XIO(SPL0711.HOA.12) [XIC(SPL0711.HOA.2) ,XIC(SPL0711.HOA.24) ] XIO(SPL0711.HOA.4) ]OTE(SPL0711.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="282" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0711.Value)OTE(SPL0711.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="283" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0711.Value)OTE(SPL0711.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="284" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0711.Value)OTE(SPL0711.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="285" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0711.HOA.10)[ONS(SPL0711.OnCountONS) ADD(SPL0711.OnCount,1,SPL0711.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0711.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0711.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="286" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0711.HOA.3) XIC(SPL0711.HOA.1) XIC(SPL0711.HOA.12) ,XIC(SPL0711.HOA.4) XIC(SPL0711.HOA.2) XIO(SPL0711.HOA.12) ]OTE(SPL0711.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="287" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0711.HOA.0) [XIO(SPL0711.HOA.10) ,XIC(SPL0711.HOA.11) ] ,XIO(SPL0711.HOA.0) [XIC(SPL0711.HOA.10) ,XIO(SPL0711.HOA.11) ] ][TON(SPL0711.FeedbackFaultTimer,?,?) ,XIC(SPL0711.FeedbackFaultTimer.DN) OTE(SPL0711.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="288" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0711.HOA.10)[MOV(999999999,SPL0711.FeedbackOnTimer.PRE) ,TON(SPL0711.FeedbackOnTimer,?,?) ,GRT(SPL0711.FeedbackOnTimer.ACC,SPL0711.FeedbackOnTimeShort) OTE(SPL0711.OnForTimeShortBit) ,GRT(SPL0711.FeedbackOnTimer.ACC,SPL0711.FeedbackOnTimeLong) OTE(SPL0711.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="289" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0711.HOA.11)[MOV(999999999,SPL0711.FeedbackOffTimer.PRE) ,TON(SPL0711.FeedbackOffTimer,?,?) ,GRT(SPL0711.FeedbackOffTimer.ACC,SPL0711.FeedbackOffTimeShort) OTE(SPL0711.OffForTimeShortBit) ,GRT(SPL0711.FeedbackOffTimer.ACC,SPL0711.FeedbackOffTimeLong) OTE(SPL0711.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="290" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0712.HOA.1)TOF(SPL0712.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="291" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0712.HOA.12) [XIC(SPL0712.HOA.1) ,XIC(SPL0712.DelayBeforeOffTimer.DN) ] XIO(SPL0712.HOA.3) ,XIO(SPL0712.HOA.12) [XIC(SPL0712.HOA.2) ,XIC(SPL0712.HOA.24) ] XIO(SPL0712.HOA.4) ]OTE(SPL0712.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="292" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0712.Value)OTE(SPL0712.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="293" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0712.Value)OTE(SPL0712.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="294" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0712.Value)OTE(SPL0712.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="295" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0712.HOA.10)[ONS(SPL0712.OnCountONS) ADD(SPL0712.OnCount,1,SPL0712.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0712.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0712.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="296" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0712.HOA.3) XIC(SPL0712.HOA.1) XIC(SPL0712.HOA.12) ,XIC(SPL0712.HOA.4) XIC(SPL0712.HOA.2) XIO(SPL0712.HOA.12) ]OTE(SPL0712.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="297" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0712.HOA.0) [XIO(SPL0712.HOA.10) ,XIC(SPL0712.HOA.11) ] ,XIO(SPL0712.HOA.0) [XIC(SPL0712.HOA.10) ,XIO(SPL0712.HOA.11) ] ][TON(SPL0712.FeedbackFaultTimer,?,?) ,XIC(SPL0712.FeedbackFaultTimer.DN) OTE(SPL0712.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="298" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0712.HOA.10)[MOV(999999999,SPL0712.FeedbackOnTimer.PRE) ,TON(SPL0712.FeedbackOnTimer,?,?) ,GRT(SPL0712.FeedbackOnTimer.ACC,SPL0712.FeedbackOnTimeShort) OTE(SPL0712.OnForTimeShortBit) ,GRT(SPL0712.FeedbackOnTimer.ACC,SPL0712.FeedbackOnTimeLong) OTE(SPL0712.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="299" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0712.HOA.11)[MOV(999999999,SPL0712.FeedbackOffTimer.PRE) ,TON(SPL0712.FeedbackOffTimer,?,?) ,GRT(SPL0712.FeedbackOffTimer.ACC,SPL0712.FeedbackOffTimeShort) OTE(SPL0712.OffForTimeShortBit) ,GRT(SPL0712.FeedbackOffTimer.ACC,SPL0712.FeedbackOffTimeLong) OTE(SPL0712.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="300" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0713.HOA.1)TOF(SPL0713.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="301" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0713.HOA.12) [XIC(SPL0713.HOA.1) ,XIC(SPL0713.DelayBeforeOffTimer.DN) ] XIO(SPL0713.HOA.3) ,XIO(SPL0713.HOA.12) [XIC(SPL0713.HOA.2) ,XIC(SPL0713.HOA.24) ] XIO(SPL0713.HOA.4) ]OTE(SPL0713.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="302" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0713.Value)OTE(SPL0713.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="303" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0713.Value)OTE(SPL0713.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="304" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0713.Value)OTE(SPL0713.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="305" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0713.HOA.10)[ONS(SPL0713.OnCountONS) ADD(SPL0713.OnCount,1,SPL0713.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0713.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0713.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="306" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0713.HOA.3) XIC(SPL0713.HOA.1) XIC(SPL0713.HOA.12) ,XIC(SPL0713.HOA.4) XIC(SPL0713.HOA.2) XIO(SPL0713.HOA.12) ]OTE(SPL0713.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="307" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0713.HOA.0) [XIO(SPL0713.HOA.10) ,XIC(SPL0713.HOA.11) ] ,XIO(SPL0713.HOA.0) [XIC(SPL0713.HOA.10) ,XIO(SPL0713.HOA.11) ] ][TON(SPL0713.FeedbackFaultTimer,?,?) ,XIC(SPL0713.FeedbackFaultTimer.DN) OTE(SPL0713.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="308" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0713.HOA.10)[MOV(999999999,SPL0713.FeedbackOnTimer.PRE) ,TON(SPL0713.FeedbackOnTimer,?,?) ,GRT(SPL0713.FeedbackOnTimer.ACC,SPL0713.FeedbackOnTimeShort) OTE(SPL0713.OnForTimeShortBit) ,GRT(SPL0713.FeedbackOnTimer.ACC,SPL0713.FeedbackOnTimeLong) OTE(SPL0713.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="309" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0713.HOA.11)[MOV(999999999,SPL0713.FeedbackOffTimer.PRE) ,TON(SPL0713.FeedbackOffTimer,?,?) ,GRT(SPL0713.FeedbackOffTimer.ACC,SPL0713.FeedbackOffTimeShort) OTE(SPL0713.OffForTimeShortBit) ,GRT(SPL0713.FeedbackOffTimer.ACC,SPL0713.FeedbackOffTimeLong) OTE(SPL0713.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="310" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0714.HOA.1)TOF(SPL0714.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="311" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0714.HOA.12) [XIC(SPL0714.HOA.1) ,XIC(SPL0714.DelayBeforeOffTimer.DN) ] XIO(SPL0714.HOA.3) ,XIO(SPL0714.HOA.12) [XIC(SPL0714.HOA.2) ,XIC(SPL0714.HOA.24) ] XIO(SPL0714.HOA.4) ]OTE(SPL0714.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="312" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0714.Value)OTE(SPL0714.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="313" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0714.Value)OTE(SPL0714.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="314" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0714.Value)OTE(SPL0714.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="315" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0714.HOA.10)[ONS(SPL0714.OnCountONS) ADD(SPL0714.OnCount,1,SPL0714.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0714.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0714.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="316" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0714.HOA.3) XIC(SPL0714.HOA.1) XIC(SPL0714.HOA.12) ,XIC(SPL0714.HOA.4) XIC(SPL0714.HOA.2) XIO(SPL0714.HOA.12) ]OTE(SPL0714.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="317" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0714.HOA.0) [XIO(SPL0714.HOA.10) ,XIC(SPL0714.HOA.11) ] ,XIO(SPL0714.HOA.0) [XIC(SPL0714.HOA.10) ,XIO(SPL0714.HOA.11) ] ][TON(SPL0714.FeedbackFaultTimer,?,?) ,XIC(SPL0714.FeedbackFaultTimer.DN) OTE(SPL0714.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="318" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0714.HOA.10)[MOV(999999999,SPL0714.FeedbackOnTimer.PRE) ,TON(SPL0714.FeedbackOnTimer,?,?) ,GRT(SPL0714.FeedbackOnTimer.ACC,SPL0714.FeedbackOnTimeShort) OTE(SPL0714.OnForTimeShortBit) ,GRT(SPL0714.FeedbackOnTimer.ACC,SPL0714.FeedbackOnTimeLong) OTE(SPL0714.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="319" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0714.HOA.11)[MOV(999999999,SPL0714.FeedbackOffTimer.PRE) ,TON(SPL0714.FeedbackOffTimer,?,?) ,GRT(SPL0714.FeedbackOffTimer.ACC,SPL0714.FeedbackOffTimeShort) OTE(SPL0714.OffForTimeShortBit) ,GRT(SPL0714.FeedbackOffTimer.ACC,SPL0714.FeedbackOffTimeLong) OTE(SPL0714.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="320" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(SPL0715.HOA.1)TOF(SPL0715.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="321" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0715.HOA.12) [XIC(SPL0715.HOA.1) ,XIC(SPL0715.DelayBeforeOffTimer.DN) ] XIO(SPL0715.HOA.3) ,XIO(SPL0715.HOA.12) [XIC(SPL0715.HOA.2) ,XIC(SPL0715.HOA.24) ] XIO(SPL0715.HOA.4) ]OTE(SPL0715.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="322" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0715.Value)OTE(SPL0715.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="323" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0715.Value)OTE(SPL0715.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="324" Type="N">
+			<Text>
+			<![CDATA[XIO(SPL0715.Value)OTE(SPL0715.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="325" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0715.HOA.10)[ONS(SPL0715.OnCountONS) ADD(SPL0715.OnCount,1,SPL0715.OnCount) ,XIC(HOA_TIMER.DN) ADD(SPL0715.OnMinutes,HOA_TIMER_ADD_AMOUNT,SPL0715.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="326" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0715.HOA.3) XIC(SPL0715.HOA.1) XIC(SPL0715.HOA.12) ,XIC(SPL0715.HOA.4) XIC(SPL0715.HOA.2) XIO(SPL0715.HOA.12) ]OTE(SPL0715.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="327" Type="N">
+			<Text>
+			<![CDATA[[XIC(SPL0715.HOA.0) [XIO(SPL0715.HOA.10) ,XIC(SPL0715.HOA.11) ] ,XIO(SPL0715.HOA.0) [XIC(SPL0715.HOA.10) ,XIO(SPL0715.HOA.11) ] ][TON(SPL0715.FeedbackFaultTimer,?,?) ,XIC(SPL0715.FeedbackFaultTimer.DN) OTE(SPL0715.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="328" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0715.HOA.10)[MOV(999999999,SPL0715.FeedbackOnTimer.PRE) ,TON(SPL0715.FeedbackOnTimer,?,?) ,GRT(SPL0715.FeedbackOnTimer.ACC,SPL0715.FeedbackOnTimeShort) OTE(SPL0715.OnForTimeShortBit) ,GRT(SPL0715.FeedbackOnTimer.ACC,SPL0715.FeedbackOnTimeLong) OTE(SPL0715.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="329" Type="N">
+			<Text>
+			<![CDATA[XIC(SPL0715.HOA.11)[MOV(999999999,SPL0715.FeedbackOffTimer.PRE) ,TON(SPL0715.FeedbackOffTimer,?,?) ,GRT(SPL0715.FeedbackOffTimer.ACC,SPL0715.FeedbackOffTimeShort) OTE(SPL0715.OffForTimeShortBit) ,GRT(SPL0715.FeedbackOffTimer.ACC,SPL0715.FeedbackOffTimeLong) OTE(SPL0715.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>

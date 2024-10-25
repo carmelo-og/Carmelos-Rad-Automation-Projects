@@ -1,0 +1,53 @@
+			<Rung Number="0" Type="N">
+			<Comment>
+			<![CDATA[HOA]]>
+			</Comment>
+			<Text>
+			<![CDATA[XIC(VFD800.HOA.1)TOF(VFD800.DelayBeforeOffTimer,?,?);]]>
+			</Text>
+			</Rung>
+			<Rung Number="1" Type="N">
+			<Text>
+			<![CDATA[[XIC(VFD800.HOA.12) [XIC(VFD800.HOA.1) ,XIC(VFD800.DelayBeforeOffTimer.DN) ] XIO(VFD800.HOA.3) ,XIO(VFD800.HOA.12) [XIC(VFD800.HOA.2) ,XIC(VFD800.HOA.24) ] XIO(VFD800.HOA.4) ]OTE(VFD800.Value);]]>
+			</Text>
+			</Rung>
+			<Rung Number="2" Type="N">
+			<Text>
+			<![CDATA[XIC(VFD800.Value)OTE(VFD800.HOA.0);]]>
+			</Text>
+			</Rung>
+			<Rung Number="3" Type="N">
+			<Text>
+			<![CDATA[XIC(VFD800.Value)OTE(VFD800.HOA.10);]]>
+			</Text>
+			</Rung>
+			<Rung Number="4" Type="N">
+			<Text>
+			<![CDATA[XIO(VFD800.Value)OTE(VFD800.HOA.11);]]>
+			</Text>
+			</Rung>
+			<Rung Number="5" Type="N">
+			<Text>
+			<![CDATA[XIC(VFD800.HOA.10)[ONS(VFD800.OnCountONS) ADD(VFD800.OnCount,1,VFD800.OnCount) ,XIC(HOA_TIMER.DN) ADD(VFD800.OnMinutes,HOA_TIMER_ADD_AMOUNT,VFD800.OnMinutes) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="6" Type="N">
+			<Text>
+			<![CDATA[[XIC(VFD800.HOA.3) XIC(VFD800.HOA.1) XIC(VFD800.HOA.12) ,XIC(VFD800.HOA.4) XIC(VFD800.HOA.2) XIO(VFD800.HOA.12) ]OTE(VFD800.HOA.13);]]>
+			</Text>
+			</Rung>
+			<Rung Number="7" Type="N">
+			<Text>
+			<![CDATA[[XIC(VFD800.HOA.0) [XIO(VFD800.HOA.10) ,XIC(VFD800.HOA.11) ] ,XIO(VFD800.HOA.0) [XIC(VFD800.HOA.10) ,XIO(VFD800.HOA.11) ] ][TON(VFD800.FeedbackFaultTimer,?,?) ,XIC(VFD800.FeedbackFaultTimer.DN) OTE(VFD800.HOA.14) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="8" Type="N">
+			<Text>
+			<![CDATA[XIC(VFD800.HOA.10)[MOV(999999999,VFD800.FeedbackOnTimer.PRE) ,TON(VFD800.FeedbackOnTimer,?,?) ,GRT(VFD800.FeedbackOnTimer.ACC,VFD800.FeedbackOnTimeShort) OTE(VFD800.OnForTimeShortBit) ,GRT(VFD800.FeedbackOnTimer.ACC,VFD800.FeedbackOnTimeLong) OTE(VFD800.OnForTimeLongBit) ];]]>
+			</Text>
+			</Rung>
+			<Rung Number="9" Type="N">
+			<Text>
+			<![CDATA[XIC(VFD800.HOA.11)[MOV(999999999,VFD800.FeedbackOffTimer.PRE) ,TON(VFD800.FeedbackOffTimer,?,?) ,GRT(VFD800.FeedbackOffTimer.ACC,VFD800.FeedbackOffTimeShort) OTE(VFD800.OffForTimeShortBit) ,GRT(VFD800.FeedbackOffTimer.ACC,VFD800.FeedbackOffTimeLong) OTE(VFD800.OffForTimeLongBit) ];]]>
+			</Text>
+			</Rung>

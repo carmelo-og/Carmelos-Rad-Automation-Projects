@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQ_DescriptionDecoder", "IQ_DescriptionDecoder\IQ_DescriptionDecoder.csproj", "{75E4CF6F-B606-4D70-B6F9-1274D99D11FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75E4CF6F-B606-4D70-B6F9-1274D99D11FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E4CF6F-B606-4D70-B6F9-1274D99D11FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E4CF6F-B606-4D70-B6F9-1274D99D11FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E4CF6F-B606-4D70-B6F9-1274D99D11FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD89F3E6-8E0A-40F5-95C1-DC655D0B61ED}
+	EndGlobalSection
+EndGlobal
