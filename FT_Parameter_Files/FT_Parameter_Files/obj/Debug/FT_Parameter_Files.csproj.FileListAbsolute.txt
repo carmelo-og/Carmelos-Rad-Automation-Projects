@@ -1,0 +1,10 @@
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\bin\Debug\FT_Parameter_Files.exe.config
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\bin\Debug\FT_Parameter_Files.exe
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\bin\Debug\FT_Parameter_Files.pdb
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\obj\Debug\FT_Parameter_Files.csprojAssemblyReference.cache
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\obj\Debug\FT_Parameter_Files.Form1.resources
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\obj\Debug\FT_Parameter_Files.Properties.Resources.resources
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\obj\Debug\FT_Parameter_Files.csproj.GenerateResource.cache
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\obj\Debug\FT_Parameter_Files.csproj.CoreCompileInputs.cache
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\obj\Debug\FT_Parameter_Files.exe
+C:\Users\Carmelo\source\repos\FT_Parameter_Files\FT_Parameter_Files\obj\Debug\FT_Parameter_Files.pdb
